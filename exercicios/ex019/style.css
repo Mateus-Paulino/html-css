@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*
+    CONFIGURAÇAO DE SELETOR:
+    em HTML é id  = em CSS é #cerquilha
+    em HTML é class  = em CSS é .
+
+*/
+
+body {
+    background-color: #eedbdf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #f80195;
+
+}
+
+
+h1#principal { /*CONFIG DE UM SELETOR PERSONALIZADO*/
+    text-align: center;
+    background-color: #755165;
+    color: white;
+}
+
+
+h2 {
+    color: #6203fa;
+}
+.basico {
+    color: #583d44;
+
+}
+
+.intermediario {
+    color: #c3e71f;
+}
+
+.avancado {
+    color: #ff0303;
+    
+
+}
+.destaque {
+    background-color: #eb68b7b4;
+
+
+}
