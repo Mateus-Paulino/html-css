@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/*TODAS AS DEMAIS MIDIAS*/
+
+/* Typical Device Breakpoints
+------------------------------
+
+Extra small mobile: 320–480 pixels for portrait mode on smartphones
+Small tablet: 601–768 pixels for portrait mode on tablets
+Small desktop and laptop: 1025–1280 pixels for small desktops and laptops
+Large desktop and high-resolution screen: 1281–1440 pixels for large desktops and high-resolution screens
+
+*/
+
+@media print { 
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg); /*desnecessário*/
+    }
+    main {
+        border: 1px solid black;
+    }
+    main::after {
+        content: "Essa foi feita pelo site www.cursoemvideo.com";
+        text-decoration: overline;
+    }
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+}
