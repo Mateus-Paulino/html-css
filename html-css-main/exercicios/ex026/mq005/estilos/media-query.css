@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*  Typical Device Breakpoints */
+ 
+/*
+Extra small mobile: 320–480 pixels for portrait mode on smartphones
+Small tablet: 601–768 pixels for portrait mode on tablets
+Small desktop and laptop: 1025–1280 pixels for small desktops and laptops
+Large desktop and high-resolution screen: 1281–1440 pixels for large desktops and high-resolution screens 
+*/
+
+
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li > a {
+        display: block;
+    }
+    main {
+        width: 768px;
+    }
+    
+}   
